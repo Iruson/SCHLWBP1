@@ -1,0 +1,133 @@
+/* ===========================================
+   ESTILO TABLA DE ARCHIVOS - CEIP LUISA CÁCERES
+   Colores: Azul Rey (#0033A0) y Amarillo (#FFD700)
+   =========================================== */
+
+/* 1. Variables Globales (Iguales a tu web principal) */
+:root {
+  --azul: #0033A0;
+  --azul-oscuro: #00236b;
+  --dorado: #FFD700;
+  --gris: #f7f7f7;
+  --texto: #222;
+  --blanco: #fff;
+  --borde-suave: #e0e0e0;
+  --azul_mas_oscuro: #001540;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--gris);
+  color: var(--texto);
+  background-color: #00236b;
+}
+
+/* 2. Contenedor Principal (Efecto Tarjeta) */
+/* Esto hace que el contenido se vea dentro de una caja blanca limpia */
+.container {
+  background-color: var(--azul_mas_oscuro);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 51, 160, 0.1); /* Sombra azul muy suave */
+  padding: 40px;
+  margin-top: 50px !important; /* Fuerza el margen superior */
+  border-top: 5px solid var(--dorado); /* Detalle dorado arriba */
+}
+
+/* 3. Títulos */
+h2 {
+  color: var(--azul);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+/* 4. Estilización de la Tabla */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid var(--borde-suave);
+  border-radius: 10px;
+  overflow: hidden; /* Para respetar los bordes redondeados */
+}
+
+/* Cabecera de la tabla */
+.table thead {
+  background: linear-gradient(90deg, var(--azul), var(--azul-oscuro));
+  color: var(--blanco);
+}
+
+.table thead th {
+  padding: 15px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Cuerpo de la tabla */
+.table tbody tr {
+  transition: all 0.3s ease;
+  background-color: var(--blanco);
+}
+
+.table tbody td {
+  padding: 15px;
+  border-bottom: 1px solid var;
+}
+
+.descarga {
+    border-radius: 10px;
+    background-color: rgb(36, 51, 226);
+    padding: 5% 2% 5% 2%; 
+    height: 10%;
+    width: auto;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.descarga:hover {
+        padding: 5% 5% 5% 5%; 
+    border-radius: 10px;
+    background-color: #FFD700;
+    color: #0033A0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.volveratras {
+    border-radius: 10px;
+    background-color: rgb(36, 51, 226);
+    height: 100px;
+    padding: 1% 1% 1% 1%;
+    width: auto;
+    margin: 1%;
+    color: white;
+    text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.volveratras:hover { 
+    border-radius: 10px;
+    background-color: #FFD700;
+    color: #0033A0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    border-radius: 10px;
+    background-color: #FFD700;
+    padding: 1%;
+    margin: 0 0 2% 0;
+}
+
+.archiveeero {
+    padding-bottom: 2%;
+    font-family: fantasy;
+}

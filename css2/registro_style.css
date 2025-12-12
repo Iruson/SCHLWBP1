@@ -1,0 +1,151 @@
+/* =========================================
+   🎨 Estilo mejorado - Registro de Usuario
+   Colores institucionales: Azul rey (#0038A8) y Amarillo brillante (#FFD700)
+   Estilo centrado, texto más grande y diseño limpio.
+========================================= */
+
+body {
+    background: linear-gradient(135deg, #0038A8 0%, #FFD700 100%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Tarjeta principal */
+.card {
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    width: 700px;                /* 📏 Más ancho */
+    font-size: 1.05rem;          /* 🧾 Texto un poco más grande */
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado */
+.card-header {
+    background: linear-gradient(90deg, #0038A8, #002B80);
+    letter-spacing: 1px;
+    font-size: 1.5rem;           /* 🧩 Título más grande */
+    padding: 1.5rem;
+}
+
+/* Cuerpo */
+.card-body {
+    background-color: #f9f9f9;
+    padding: 2rem 3rem;
+}
+
+/* Etiquetas */
+.form-label {
+    color: #0038A8;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Campos */
+.form-control,
+.form-select {
+    border: 2px solid #0038A8 !important;
+    padding: 0.75rem 1rem;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #FFD700 !important;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Botones */
+.btn {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #0038A8;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #002B80;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 56, 168, 0.4);
+}
+
+.btn-warning {
+    background-color: #FFD700;
+    color: #002B80;
+}
+
+.btn-warning:hover {
+    background-color: #FFEA00;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Toast de notificación */
+.toast-message {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #0038A8;
+    color: white;
+    padding: 18px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    z-index: 9999;
+    animation: slideIn 0.6s ease;
+}
+
+.toast-message.success { background-color: #28a745; }
+.toast-message.warning { background-color: #ffc107; color: #333; }
+.toast-message.error { background-color: #dc3545; }
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* =========================================
+   Fin del estilo mejorado - Registro de Usuario

@@ -1,0 +1,8 @@
+{
+    "require": {
+        "dompdf/dompdf": "*"
+    },
+    "config": {
+        "process-timeout": 600
+    }
+}

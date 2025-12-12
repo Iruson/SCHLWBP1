@@ -1,0 +1,138 @@
+/* ======================================= */
+/* 1. Globals - Tipografía y base */
+/* ======================================= */
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: var(--color-bg-light);
+    color: var(--color-text-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.55;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2 {
+    font-weight: 800;
+    letter-spacing: -0.4px;
+}
+
+/* ======================================= */
+/* 2. Tarjetas */
+/* ======================================= */
+
+.box-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    margin-bottom: 25px;
+}
+
+/* ======================================= */
+/* 3. Botones */
+/* ======================================= */
+
+.btn {
+    font-weight: 600;
+    border-radius: 8px !important;
+    padding: 10px 18px;
+    transition: all 0.22s ease-in-out !important;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ======================================= */
+/* 4. Caja de búsqueda */
+/* ======================================= */
+
+.search-box input[type="text"] {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    max-width: 350px;
+    transition: all .25s ease;
+}
+
+.search-box input[type="text"]:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.25rem var(--color-primary-light-shadow);
+}
+
+/* ======================================= */
+/* 5. Tablas */
+/* ======================================= */
+
+/* Hacemos scroll horizontal en móviles */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Tabla clásica */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    width: 100%;
+    font-size: 15px;
+    min-width: 700px;
+}
+
+.table thead {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+.table thead th {
+    padding: 14px;
+    border: none !important;
+}
+
+.table tbody td {
+    padding: 12px;
+}
+
+/* Filas */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--color-striped-odd);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--color-hover) !important;
+}
+
+td:last-child a.btn {
+    margin-right: 6px;
+}
+
+/* Responsividad extrema */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .box-card {
+        padding: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    td:last-child a.btn {
+        display: block;
+        margin-bottom: 7px;
+    }
+}

@@ -1,0 +1,79 @@
+.slider-frame {
+  width: 100%;
+  /* AUMENTADO: De 1000px a 1200px para que sea más ancho en escritorio */
+  max-width: 1200px; 
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 20px; /* Bordes un poco más redondeados */
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15); /* Sombra un poco más marcada */
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%; 
+  animation: slide 20s infinite ease-in-out;
+}
+
+.slider-frame li {
+  list-style: none;
+  width: 25%; 
+  box-sizing: border-box;
+}
+
+/* --- ESTILO INTERNO DEL SLIDE (FOTO + TEXTO) --- */
+
+.slide-content {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  /* AUMENTADO: De 400px a 550px. 
+     Esto es clave para que la foto vertical se vea grande y nítida */
+  height: 550px; 
+}
+
+.slide-content img {
+  width: 45%;         /* Aumenté un poquito el ancho de la foto (antes 40%) */
+  height: 100%;       
+  object-fit: cover;  
+  display: block;
+}
+
+.text-box {
+  width: 55%;         /* El texto tiene el resto del espacio */
+  padding: 50px;      /* Más espacio para respirar */
+  text-align: left;
+}
+
+.text-box h3 {
+  color: #2c3e50;
+  /* AUMENTADO: Título más grande e impactante */
+  font-size: 36px; 
+  margin-bottom: 20px;
+  font-family: sans-serif; /* Puedes cambiar esto por la fuente de tu colegio */
+}
+
+.text-box p {
+  color: #555;
+  /* AUMENTADO: Texto más legible */
+  font-size: 22px; 
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+/* --- ANIMACIÓN (Se mantiene igual) --- */
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	95% {margin-left: -300%;}
+
+    100% {margin-left: 0;}
+}

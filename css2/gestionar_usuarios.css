@@ -1,0 +1,101 @@
+ /* 🎨 ESTILOS GENERALES */
+        body {
+            background: linear-gradient(135deg, #0038A8 0%, #FFD700 100%);
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            margin-top: 60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            padding: 40px;
+        }
+
+        h2 {
+            color: #0038A8;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* 🔍 Buscador */
+        .search-box {
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        .search-box input {
+            width: 250px;
+            padding: 6px 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        /* 📋 Tabla de usuarios */
+        table {
+            font-size: 0.95rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background-color: #0038A8;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f6f8ff;
+            transition: 0.2s;
+        }
+
+        /* 🟡 Botones */
+        .btn-editar {
+            background-color: #FFD700;
+            color: #0038A8;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            padding: 5px 10px;
+        }
+
+        .btn-editar:hover {
+            background-color: #ffdf00;
+            transform: scale(1.05);
+        }
+
+        .btn-volver {
+            background-color: #0038A8;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 5px 10px;
+        }
+
+        .btn-volver:hover {
+            background-color: #002B80;
+        }
+
+        input, select {
+            font-size: 0.9rem;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            padding: 4px 6px;
+        }
+
+        input[type="number"] {
+            width: 80px;
+        }
+
+        /* 🟢 Indicador visual de créditos */
+        .habilitado {
+            color: green;
+            font-weight: bold;
+        }
+
+        .no-habilitado {
+            color: red;
+            font-weight: bold;
+        }
